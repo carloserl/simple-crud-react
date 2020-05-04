@@ -4,18 +4,14 @@ import { v4 as uuiiv4 } from 'uuid'
 import styles from "./style";
 import Form from "../../components/Form";
 import Table from "../../components/Table";
-// import { MovieIcon } from '../../icons';
-// import useGet from '../../hooks/useGet'
 import { useState, useEffect } from "react";
 import { getService, postService, putService, deleteService } from "../../services";
 
 
 const columns = [
-  // { id: 'id', label: 'id', minWidth: 0 },
-  // { id: 'idgroup', label: 'group', minWidth: 0 },
-  { id: 'lastname', label: 'Apellido', minWidth: 70 },
-  { id: 'name', label: 'Nombre', minWidth: 70 },
   { id: 'user', label: 'Usuario', minWidth: 70 },
+  { id: 'name', label: 'Nombre', minWidth: 70 },
+  { id: 'lastname', label: 'Apellido', minWidth: 70 },
   { id: 'id', label: 'Opciones', type: 'button', minWidth: 0 },
 ];
 

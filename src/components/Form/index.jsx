@@ -90,7 +90,7 @@ const FormUser = (props) => {
           className={classes.searchButton}
           // size="mediun"
         >
-          Crear
+          Guardar
         </Button>
       </Grid>
     </Card>

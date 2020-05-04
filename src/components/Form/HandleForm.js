@@ -12,10 +12,6 @@ const HandleForm = (callback, validate, selected) => {
   const [valuesedit, setValuesedit] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-
-
-
-
   if (selected.id !== valuesedit.id){ 
     setValuesedit({...selected})
     setValues({...selected})
@@ -50,7 +46,7 @@ const HandleForm = (callback, validate, selected) => {
     if (Object.keys(errors).length === 0 && isSubmitting) {
       callback();
     }
-  }, [errors,callback,isSubmitting]);
+  }, [errors]);
 
   return {
     handleChange,
